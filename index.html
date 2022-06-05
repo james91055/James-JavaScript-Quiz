@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <header>
+    <div id="Highscore">
+      <a href="#">View Highscore</a>
+    </div>
+    <div id="=countdown">a</div>
+  </header>
+
+  <body>
+    <div class="quiz-container">
+      <h2>Question text</h2>
+      <ul>
+        <li>
+          <input type="radio" id="a" name="answer" />
+          <label for="a">Question</label>
+        </li>
+        <li>
+          <input type="radio" id="b" name="answer" />
+          <label for="b">Question</label>
+        </li>
+        <li>
+          <input type="radio" id="c" name="answer" />
+          <label for="c">Question</label>
+        </li>
+        <li>
+          <input type="radio" id="d" name="answer" />
+          <label for="d">Question</label>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="./assets/script.js"></script>
+</html>
+
+<!-- 
+    Header: HighScores: anchor Timer: 
+    
+    Main: div:header1 
+    paragraph: explaining how the quiz works 
+    
+    Start button Classes/ids attach those divs/header2/unorder list/paragraph 
+    
+    Classes to hide and show elements div for feedback correct or incorrect though JS new div end of game screen paragraph or header 2 JS grab
+remainig item put in div From simpler label and input submitbutton Highscores
+page (new html) JS Global variable references questions div list items of
+answers end game div timer General variables HighScores timer time questions
+left(referencing the indexes) var questionIndex =0 feedback variable
+correct/incorrect Event listner for start button reference the button add event
+listner and function on start button click startGame function startGame function
+hide the intro start screen first question rendered -->
+<!-- Call a function show
+question answer timerStart function = setInterval{function,1000} timer display
+render question function Change hidden value of questions div variable with
+array of objects to hold questions var question = [ {title: "JS question",
+answerChoices:[1,2,3,4,], correctAnswer:"answer" }] ,..... reference the index
+of the question to display on screen increment the question index variable grab
+html refernce to header append question[0].title grab html reference push
+question answers to an array loop through answers create a list/button to append
+to the div or ul add event listeners to the answer choices or div that holds the
+answer choices event.target matches the correct answer (conditional if ) check
+answer function var selectedAns = event.target
+if(selectedAns===question[0].correctAnswer){ provide correct feedback DOM add an
+element } else{ incorrect feedback penalize timer global time variable subtract
+"time"(-=10second) } start timer function on startBtn click time-- rerender time
+on screen warning check timer if statement if time ===0 then end quiz else keep
+running the function clearinterval End quiz function hidequestion idsplay
+initials score page on submitbutton send initials and score to local storage
+setItem(key.value) store scores in an array and stringify to put in local
+storage pull out of local storage getItem JSON.purse pull out scores from local
+storage put them in array push the most recent score to array and store again
+display final score Highscore page Pull items out of storage and display on
+screen go back btn anchor that references index.html clear btn find method to
+clear local storage Highscores html div with orderlist items btns going back and
+clear -->

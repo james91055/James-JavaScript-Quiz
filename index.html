@@ -8,7 +8,7 @@
   </head>
 
   <nav>
-    <div id="highscore">
+    <div id="highscore-html">
       <a href="#">View Highscore</a>
     </div>
     <div id="countdown"></div>
@@ -30,8 +30,6 @@
       </div>
     </div>
 
-
-    
     <div class="end-info" id="end-info">
       <div class="quiz-container">
         <div class="quiz-header">
@@ -39,10 +37,9 @@
           <label for="initials">Your Initials:</label>
           <input type="text" id="initials" name="initials" />
         </div>
-        <button id="submit" onclick="submitInitials()">Submit</button>
+        <button id="submit-initials" onclick="submitInitials()">Submit</button>
       </div>
     </div>
-
 
     <div class="highscore" id="highscore">
       <div class="quiz-container">
@@ -53,31 +50,29 @@
       </div>
     </div>
 
-
-
     <div class="quiz-container" id="main-quiz">
       <div class="quiz-header">
-        <h2>Question text</h2>
+        <h2 id="question">Question text</h2>
         <ul>
           <li>
             <input type="radio" id="a" name="answer" />
-            <label for="a">Question</label>
+            <label id="a_text" for="a">Question</label>
           </li>
           <li>
             <input type="radio" id="b" name="answer" />
-            <label for="b">Question</label>
+            <label id="b_text" for="b">Question</label>
           </li>
           <li>
             <input type="radio" id="c" name="answer" />
-            <label for="c">Question</label>
+            <label id="c_text" for="c">Question</label>
           </li>
           <li>
             <input type="radio" id="d" name="answer" />
-            <label for="d">Question</label>
+            <label id="d_text" for="d">Question</label>
           </li>
         </ul>
       </div>
-      <button>Submit</button>
+      <button id="submit-button" onclick="loadQuiz()">Submit</button>
     </div>
   </body>
   <script src="./assets/script.js"></script>

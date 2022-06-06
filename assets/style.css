@@ -53,7 +53,7 @@ button:hover {
   font-size: 1.3rem;
   padding: 1.3rem;
 }
-#highscore {
+#highscore-html a {
   position: absolute;
   top: 0;
   left: 0;

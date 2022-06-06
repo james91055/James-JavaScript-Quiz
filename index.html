@@ -7,34 +7,52 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
-  <header>
-    <div id="Highscore">
+  <nav>
+    <div id="highscore">
       <a href="#">View Highscore</a>
     </div>
-    <div id="=countdown">a</div>
-  </header>
+    <div id="countdown"></div>
+  </nav>
 
   <body>
-    <div class="quiz-container">
-      <h2>Question text</h2>
-      <ul>
-        <li>
-          <input type="radio" id="a" name="answer" />
-          <label for="a">Question</label>
-        </li>
-        <li>
-          <input type="radio" id="b" name="answer" />
-          <label for="b">Question</label>
-        </li>
-        <li>
-          <input type="radio" id="c" name="answer" />
-          <label for="c">Question</label>
-        </li>
-        <li>
-          <input type="radio" id="d" name="answer" />
-          <label for="d">Question</label>
-        </li>
-      </ul>
+    <div class="start-info">
+      <div class="quiz-container" id="start-info">
+        <div class="quiz-header">
+          <h2>Quiz Info</h2>
+          <ol>
+            <li>Answer time starts with 30 second</li>
+            <li>If you got an answer wrong, you will lose 5 second</li>
+            <li>If you got an right answer, you will gain 5 second</li>
+            <li>Enjoy the game😊</li>
+          </ol>
+        </div>
+        <button id="start-button">Start</button>
+      </div>
+    </div>
+
+    <div class="quiz-container" id="main-quiz">
+      <div class="quiz-header">
+        <h2>Question text</h2>
+        <ul>
+          <li>
+            <input type="radio" id="a" name="answer" />
+            <label for="a">Question</label>
+          </li>
+          <li>
+            <input type="radio" id="b" name="answer" />
+            <label for="b">Question</label>
+          </li>
+          <li>
+            <input type="radio" id="c" name="answer" />
+            <label for="c">Question</label>
+          </li>
+          <li>
+            <input type="radio" id="d" name="answer" />
+            <label for="d">Question</label>
+          </li>
+        </ul>
+      </div>
+      <button>Submit</button>
     </div>
   </body>
   <script src="./assets/script.js"></script>

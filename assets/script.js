@@ -1,4 +1,7 @@
 var timerEl = document.getElementById("countdown");
+var quizEl = document.getElementById("main-quiz");
+var startBut = document.getElementById("start-button");
+var infoEl = document.getElementById("start-info");
 
 const quizData = [
   {
@@ -49,7 +52,7 @@ function countdown() {
   // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
     timeLeft--;
-    timerEl.textContent = "Time Left" + timeLeft;
+    timerEl.textContent = "Time Left: " + timeLeft;
     if (timeLeft === 0) {
       clearInterval(timeInterval);
       displayMessage();
@@ -58,4 +61,9 @@ function countdown() {
   }, 1000);
 }
 
-countdown();
+function startgame() {
+  quizEl.style.display = "none";
+  //   startBut.addEventListener("click", countdown());
+}
+
+startgame();

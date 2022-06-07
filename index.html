@@ -37,7 +37,7 @@
           <label for="initials">Your Initials:</label>
           <input type="text" id="initials" name="initials" />
         </div>
-        <button id="submit-initials" onclick="submitInitials()">Submit</button>
+        <button id="submit-initials" onclick="highscore()">Submit</button>
       </div>
     </div>
 
@@ -45,6 +45,9 @@
       <div class="quiz-container">
         <div class="quiz-header">
           <h2>Highscores</h2>
+          <ol>
+            <li id="highscore-data"></li>
+          </ol>
         </div>
         <button id="start-button" onclick="countdown()">Restart</button>
       </div>

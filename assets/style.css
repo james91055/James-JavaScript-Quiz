@@ -28,6 +28,10 @@ ul {
 li {
   margin: 1rem;
 }
+li label,
+#question li input {
+  cursor: pointer;
+}
 
 button {
   background-color: rgb(55, 79, 144);
